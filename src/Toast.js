@@ -93,13 +93,13 @@ Toast.defaultProps = {
 };
 
 Toast.propTypes = {
-  containerStyle: View.propTypes.style,
+  containerStyle: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   message: PropTypes.string,
-  messageStyle: Text.propTypes.style, // eslint-disable-line react/no-unused-prop-types
+  messageStyle: PropTypes.any, // eslint-disable-line
   error: PropTypes.bool,
-  errorStyle: View.propTypes.style,
+  errorStyle: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   warning: PropTypes.bool,
-  warningStyle: View.propTypes.style,
+  warningStyle: PropTypes.any, // eslint-disable-line react/forbid-prop-types
   duration: PropTypes.number,
   getMessageComponent: PropTypes.func
 };
